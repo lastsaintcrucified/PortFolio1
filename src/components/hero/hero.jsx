@@ -13,9 +13,9 @@ const hero = () => (
       <Row>
         <Col md={12} lg={6}>
           <div className="hero-info">
-            <h1 className="weight800 font60">Hello!!!</h1>
+            <h1 className="weight800 font60">Hey!!!</h1>
             <h1 className="weight800 font60">
-              We Are Creative Digital Agency.
+              MERN stack savyy in on the way...
             </h1>
             <p className="font12">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
