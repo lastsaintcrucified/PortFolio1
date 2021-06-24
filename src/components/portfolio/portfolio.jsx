@@ -1,4 +1,5 @@
 import React from "react";
+import {AnimatedOnScroll} from "react-animated-css-onscroll";
 import { Row, Col } from "react-flexbox-grid";
 import Masonry from "react-masonry-css";
 //Scss
@@ -25,8 +26,8 @@ class Portfolio extends React.Component {
         {
           id: "1",
           preview: Preview1,
-          title: "Social",
-          tag: "chat",
+          title: "Chat",
+          tag: "social",
         },
         {
           id: "2",
@@ -51,6 +52,12 @@ class Portfolio extends React.Component {
           preview: Preview5,
           title: "E-shop",
           tag: "Shop",
+        },
+        {
+          id: "6",
+          preview: Preview6,
+          title: "Client Panel",
+          tag: "fun",
         }
       ],
       // PORTFOLIO GALLERY WILL LOAD THIS AFTER FUNCTION "filterGallery" FINISH FILTERING
@@ -137,7 +144,8 @@ class Portfolio extends React.Component {
     }
 
     return (
-      <div id="portfolio">
+      <AnimatedOnScroll  animationIn="wobble"  animationOut="fadeOut">
+        <div id="portfolio">
         <div className="wrapper">
           <Title title="WORK SHOWCASE." />
           <Row>
@@ -148,8 +156,8 @@ class Portfolio extends React.Component {
                     ALL
                   </li>
                   <li
-                    className={this.state.pickedFilter === "chat" ? "portfolio__nav-active font12" : "font12"}
-                    onClick={() => this.filterGallery("chat")}
+                    className={this.state.pickedFilter === "social" ? "portfolio__nav-active font12" : "font12"}
+                    onClick={() => this.filterGallery("social")}
                   >
                     Social
                   </li>
@@ -161,6 +169,12 @@ class Portfolio extends React.Component {
                   </li>
                   <li className={this.state.pickedFilter === "fun" ? "portfolio__nav-active font12" : "font12"} onClick={() => this.filterGallery("fun")}>
                    Fun
+                  </li>
+                  <li
+                    className={this.state.pickedFilter === "fun" ? "portfolio__nav-active font12" : "font12"}
+                    onClick={() => this.filterGallery("fun")}
+                  >
+                    Fun
                   </li>
                 </ul>
               </div>
@@ -181,6 +195,7 @@ class Portfolio extends React.Component {
           </Row>
         </div>
       </div>
+      </AnimatedOnScroll >
     );
   }
 }

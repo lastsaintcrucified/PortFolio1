@@ -11,6 +11,10 @@
   transition:  0.3s ease;
   z-index: 100;
 
+  .myLogo{
+    width:70px;
+    height:70px;
+  }
   .mobile__menu {
     display: none;
     padding: 10px 15px;

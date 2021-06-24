@@ -13,18 +13,18 @@ const contactSocial = () => (
     <Col xs={12}>
       <Row center="xs">
         <Col xs={12} lg={1} className="contact__social">
-          <a href="https://www.facebook.com/towhhidul.islam/" target="_blank">
+          <a href="https://www.facebook.com/towhhidul.islam/" target="_blank" rel="noopener noreferrer">
           <img src={FacebookIcon} alt="facebook" />
           </a>
           
         </Col>
         <Col xs={12} lg={1} className="contact__social">
-        <a href="https://github.com/lastsaintcrucified" target="_blank">
+        <a href="https://github.com/lastsaintcrucified" target="_blank" rel="noopener noreferrer">
           <img src={GithubIcon} alt="github" />
         </a>
         </Col>
         <Col xs={12} lg={1} className="contact__social">
-        <a href="https://www.linkedin.com/in/md-towhidul-islam-bhy-a6a814158/" target="_blank">
+        <a href="https://www.linkedin.com/in/md-towhidul-islam-bhy-a6a814158/" target="_blank" rel="noopener noreferrer">
           <img src={LinkedIcon} alt="linkedin" />
         </a>
         </Col>

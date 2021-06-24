@@ -3,7 +3,7 @@ import React from "react";
 import "./teamInfo.scss";
 
 const about = () => (
-  <div className="team__info flex-center">
+<div className="team__info flex-center">
     <div>
       <h4 className="font20 weight800">Little About Me</h4>
       <p className="font12 weight500">
@@ -16,6 +16,7 @@ const about = () => (
       <p className="font12 weight500">Read More</p>
     </div>
   </div>
+  
 );
 
 export default about;

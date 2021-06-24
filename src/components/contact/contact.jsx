@@ -1,4 +1,5 @@
 import React from "react";
+import { AnimatedOnScroll } from "react-animated-css-onscroll";
 import { Row, Col } from "react-flexbox-grid";
 import "./contact.scss";
 import * as emailjs from "emailjs-com";
@@ -41,10 +42,10 @@ class Contact extends React.Component {
 
 
     // YOUR EMAIL.JS API KEY IN FORMAT user_xxxxxxxxxxxxxxxxxx
-    let API_KEY = "";
+    let API_KEY = "user_H2agRfBgjQp51uTRXBv7P";
 
     // YOUR EMAIL.JS TEMPLATE ID
-    let TEMPLATE_ID = "";
+    let TEMPLATE_ID = "template_9udxgop";
 
 
 
@@ -110,7 +111,8 @@ class Contact extends React.Component {
       modalRender = <Modal closeModal={this.closeModal} status="error" />;
     }
     return (
-      <div id="contact">
+      <AnimatedOnScroll animationIn="rollIn" animationOut="fadeOut">
+<div id="contact">
         {modalRender}
         <div className="wrapper">
           <Title title="CONTACT ME." />
@@ -146,6 +148,8 @@ class Contact extends React.Component {
           <ContactSocial />
         </div>
       </div>
+      </AnimatedOnScroll>
+      
     );
   }
 };

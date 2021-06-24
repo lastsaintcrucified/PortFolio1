@@ -12,7 +12,7 @@ const partnerBox = () => (
       <Row>
         <Col xs={12} sm={6} md={6}>
           <div className="footer-box">
-            <img src={Logo} alt="logo" />
+            <img src={Logo} alt="logo"  className="lg"/>
             <p>Be prepared for the best not the worst</p>
           </div>
         </Col>
