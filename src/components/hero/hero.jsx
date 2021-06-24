@@ -9,7 +9,7 @@ import HeroImage from "../../assets/hero/hero.png";
 import Button from "../ui-components/button/button";
 
 const hero = () => (
-  <AnimatedOnScroll animationIn="bounceInLeft" animationOut="fadeOut">
+  <AnimatedOnScroll animationIn="bounceInLeft" >
     <div className="hero" id="hero">
     <div className="wrapper">
       <Row>

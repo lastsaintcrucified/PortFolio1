@@ -7,6 +7,7 @@ import MobileNav from './components/navbar/mobile-nav';
 import Backdrop from "./components/navbar/backdrop";
 import Hero from './components/hero/hero';
 import Portfolio from "./components/portfolio/portfolio";
+import Partners from "./components/partners/partners";
 import About from "./components/about/about";
 import Blog from "./components/blog/blog";
 import Contact from "./components/contact/contact";
@@ -68,6 +69,7 @@ class App extends React.Component {
         />
         <Hero />
         <Portfolio />
+        <Partners />
         <About />
         <Blog />
         <Contact />
